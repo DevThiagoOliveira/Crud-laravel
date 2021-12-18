@@ -21,3 +21,5 @@ Route::get('/produto/novo','ProdutosController@create');
 Route::post('/produto/novo','ProdutosController@store')->name('salvar_produto');
 Route::get('/produtos/ver','ProdutosController@show')->name('mostrar');
 Route::get('/produto/del/{id}','ProdutosController@destroy')->name('excluir_produto');
+Route::get('/produto/edit/{id}','ProdutosController@edit')->name('editar_produto');
+Route::post('/produto/edit/{id}','ProdutosController@update')->name('atualizar_produto');

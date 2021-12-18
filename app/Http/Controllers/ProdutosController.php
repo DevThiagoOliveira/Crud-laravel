@@ -32,4 +32,21 @@ class ProdutosController extends Controller
         $produto->delete();
         return view("produtos.delete");
     }
+
+    public function edit($id){
+        $produto = Produto::find($id);
+        return view('produtos.editar', ['produto'=>$produto]);
+    }
+
+    public function update(Request $request, $id){
+        $produto = Produto::find($id);
+        $produto->update([
+            'titulo' =>$request->titulo,
+            'preco' =>$request->preco,
+            'categoria' =>$request->categoria,
+            'comentario' =>$request->comentario,
+        ]);
+
+        return view("produtos.atualizado");
+    }
 }

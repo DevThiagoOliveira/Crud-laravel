@@ -29,7 +29,7 @@
             </div>
             <div>
                 <select class="form-select" name="categoria" required>
-                    <option selected>Categorias</option>
+                    <option value selected>Categorias</option>
                     <option value="Comida">Comida</option>
                     <option value="Bebida">Bebida</option>
                     <option value="Utilitário">Utilitário</option>
