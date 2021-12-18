@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/produto/novo','ProdutosController@create');
 Route::post('/produto/novo','ProdutosController@store')->name('salvar_produto');
 Route::get('/produtos/ver','ProdutosController@show')->name('mostrar');
+Route::get('/produto/del/{id}','ProdutosController@destroy')->name('excluir_produto');

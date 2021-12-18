@@ -17,7 +17,7 @@
                     <td class="table-dark">{{$produto->preco}}</td>
                     <td class="table-dark">{{$produto->categoria}}</td>
                     <td class="table-dark">{{$produto->comentario}}</td>
-                    <td class="table-dark"><button type="button" class="btn btn-danger">Excluir</button></td>
+                    <td class="table-dark"><a href="{{ route('excluir_produto', ['id' => $produto->id])}}"><button type="button" class="btn btn-danger">Excluir</button></a></td>
                     <td class="table-dark"><button type="button" class="btn btn-warning">Editar</button></td>
             </tr>
             @endforeach

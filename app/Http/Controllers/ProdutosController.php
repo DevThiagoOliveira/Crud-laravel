@@ -26,4 +26,10 @@ class ProdutosController extends Controller
         $produtos = Produto::all();
         return view('produtos.todos', compact('produtos'));
     }
+
+    public function destroy($id){
+        $produto = Produto::findOrFail($id);
+        $produto->delete();
+        return view("produtos.delete");
+    }
 }
