@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/produto/novo','ProdutosController@create');
+Route::post('/produto/novo','ProdutosController@store')->name('salvar_produto');
+Route::get('/produtos/ver','ProdutosController@show')->name('mostrar');
