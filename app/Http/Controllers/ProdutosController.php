@@ -38,21 +38,9 @@ class ProdutosController extends Controller
         return view('produtos.editar', ['produto'=>$produto]);
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request){
 
-        intval($id);
-
-        $produto = Produto::find($id);
-        $produto->update([
-            'titulo' =>$request->titulo,
-            'preco' =>$request->preco,
-            'categoria' =>$request->categoria,
-            'comentario' =>$request->comentario,
-        ]);
-
-        var_dump($$id);
-        exit();
-
+       $produto = Produto::find($request->id)->update($request->all());
         return view("produtos.atualizado");
     }
 

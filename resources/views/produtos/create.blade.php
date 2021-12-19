@@ -28,7 +28,7 @@
                 <input type="number" class="form-control" required name="preco" id="barra-valor">
             </div>
             <div>
-                <select class="form-select" name="categoria" required>
+                <select class="form-select" name="categoria" id="categoria" required>
                     <option value selected>Categorias</option>
                     <option value="Comida">Comida</option>
                     <option value="Bebida">Bebida</option>

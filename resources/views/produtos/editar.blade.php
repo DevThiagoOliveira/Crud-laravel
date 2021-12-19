@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <form action="{{route('atualizar_produto', ['id', $produto->id])}}" method="post">
+    <form action="{{route('atualizar_produto',$produto->id)}}" method="post">
         @csrf
             <div class="mb-3">
                 <label for="titulo" class="form-label">Nome Produto</label>
@@ -25,10 +25,10 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text">Valor R$</span >
-                <input type="number" class="form-control" required name="preco" id="barra-valor" value="{{$produto->preco}}">
+                <input type="number" class="form-control" required name="preco" id="valor" value="{{$produto->preco}}">
             </div>
             <div>
-                <select class="form-select" name="categoria" required>
+                <select class="form-select" name="categoria" id="categoria" required>
                     <option value="Categorias" {{$produto->categoria == "Categorias" ? "selected='selected" : ""}}>Categorias</option>
                     <option value="Comida"{{$produto->categoria == "Comida" ? "selected='selected" : ""}}>Comida</option>
                     <option value="Bebida"{{$produto->categoria == "Bebida" ? "selected='selected" : ""}}>Bebida</option>
