@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <META http-equiv="refresh" content="2.5;http://localhost:8000/produtos/ver"></META>
     <link rel="stylesheet" href="{{url("assets/css/bootstrap.min.css")}}">
     <title>Produto Salvo</title>
 </head>

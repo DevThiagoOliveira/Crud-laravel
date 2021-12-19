@@ -29,12 +29,12 @@
             </div>
             <div>
                 <select class="form-select" name="categoria" required>
-                    <option value="0" {{$produto->categoria == "Categorias" ? "selected='selected" : ""}}>Categorias</option>
-                    <option value="1"{{$produto->categoria == "Comida" ? "selected='selected" : ""}}>Comida</option>
-                    <option value="2"{{$produto->categoria == "Bebida" ? "selected='selected" : ""}}>Bebida</option>
-                    <option value="3"{{$produto->categoria == "Utilitário" ? "selected='selected" : ""}}>Utilitário</option>
-                    <option value="4"{{$produto->categoria == "Eletrônicos" ? "selected='selected" : ""}}>Eletrônicos</option>
-                    <option value="5"{{$produto->categoria == "Outros" ? "selected='selected" : ""}}>Outros</option>
+                    <option value="Categorias" {{$produto->categoria == "Categorias" ? "selected='selected" : ""}}>Categorias</option>
+                    <option value="Comida"{{$produto->categoria == "Comida" ? "selected='selected" : ""}}>Comida</option>
+                    <option value="Bebida"{{$produto->categoria == "Bebida" ? "selected='selected" : ""}}>Bebida</option>
+                    <option value="Utilitário"{{$produto->categoria == "Utilitário" ? "selected='selected" : ""}}>Utilitário</option>
+                    <option value="Eletrônicos"{{$produto->categoria == "Eletrônicos" ? "selected='selected" : ""}}>Eletrônicos</option>
+                    <option value="Outros"{{$produto->categoria == "Outros" ? "selected='selected" : ""}}>Outros</option>
                   </select>
             </div>
             <div class="form-floating">

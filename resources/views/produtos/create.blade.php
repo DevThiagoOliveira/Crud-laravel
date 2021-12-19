@@ -42,6 +42,7 @@
                 <label for="comentario">Comentário</label>
             </div>
             <button type="submit" class="btn btn-success botao" id="botao">Salvar</button>
+            <a href="{{ route('welcome')}}"><button type="button" class="btn btn-danger">Voltar</button></a>
     </form>
 </body>
 </html>

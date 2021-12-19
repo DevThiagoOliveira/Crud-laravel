@@ -17,10 +17,13 @@
                     <td class="table-dark">{{$produto->preco}}</td>
                     <td class="table-dark">{{$produto->categoria}}</td>
                     <td class="table-dark">{{$produto->comentario}}</td>
-                    <td class="table-dark"><a href="{{ route('excluir_produto', ['id' => $produto->id])}}"><button type="button" class="btn btn-danger">Excluir</button></a></td>
-                    <td class="table-dark"><a href="{{ route('editar_produto', ['id' => $produto->id])}}"><button type="button" class="btn btn-warning">Editar</button></a></td>
+                    <td class="table-dark"><a href="{{ route('excluir_produto', ['id' $produto->id])}}"><button type="button" class="btn btn-danger">Excluir</button></a></td>
+                    <td class="table-dark"><a href="{{ route('editar_produto', ['id' $produto->id])}}"><button type="button" class="btn btn-warning">Editar</button></a></td>
             </tr>
             @endforeach
     </table>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="{{ route('welcome')}}"><button type="button" class="btn btn-danger">Voltar</button></a>
+      </div>
 </body>
 </html>

@@ -39,6 +39,9 @@ class ProdutosController extends Controller
     }
 
     public function update(Request $request, $id){
+
+        intval($id);
+
         $produto = Produto::find($id);
         $produto->update([
             'titulo' =>$request->titulo,
@@ -47,6 +50,13 @@ class ProdutosController extends Controller
             'comentario' =>$request->comentario,
         ]);
 
+        var_dump($$id);
+        exit();
+
         return view("produtos.atualizado");
+    }
+
+    public function welcome(){
+        return view('welcome');
     }
 }
